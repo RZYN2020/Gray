@@ -6,6 +6,9 @@ module.exports = {
         path: path.resolve(__dirname, 'public'),
         filename: "gray.js"
     },
+    resolve: {
+        extensions: ['.ts', '.js', '.json']
+    },
     module: {
         rules: [
             {
@@ -16,5 +19,5 @@ module.exports = {
         ]
     },
     // 模式
-    mode: "development",
+    mode: "none",
 }
