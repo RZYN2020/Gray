@@ -4,9 +4,17 @@
 
 A simple web-design framework which uses MVVM pattern and TypeScript.
 
+Modified from https://github.com/DMQ/mvvm.
 
-## Todo
+## How to use
 
-- [ ] reactive
-- [ ] template
-- [ ] virtual dom and diff algorithm
++ Build Output JavaScript
+```
+npm install
+npm run build
+```
+
++ Run tests 
+```
+npm run test
+```

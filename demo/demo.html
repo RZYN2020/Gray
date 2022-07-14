@@ -7,16 +7,24 @@
 
 <body>
     <div id="app">
+        <button @click="myMethod">BUTTON</button>
         <p>{{msg}}</p>
-        <p v-text="msg"></p>
+        <p g-text="info"></p>
+        <input g-model="wtf" type="text"/>
     </div>
     <script>
         const app = new Gray({
             el: '#app',
             data: {
+                wtf: "hhh",
                 msg: 'Hello',
-                info: '什么鬼',
+                info: 'WWW',
             },
+            methods: {
+                myMethod() {
+                    alert('这是一个按钮');
+                }
+            }
         });
     </script>
 </body>
